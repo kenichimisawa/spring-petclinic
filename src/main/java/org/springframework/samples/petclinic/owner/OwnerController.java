@@ -98,7 +98,6 @@ class OwnerController {
         } else {
             // multiple owners found
             model.put("selections", results);
-            System.out.println(results);
             return "owners/ownersList";
         }
     }
@@ -143,7 +142,6 @@ class OwnerController {
         Collection<Owner> results = this.owners.findByLastName(owner.getLastName());
         // multiple owners found
         model.put("selections", results);
-        System.out.println(results);
         return "/owners/ownersAll";
     }
 
